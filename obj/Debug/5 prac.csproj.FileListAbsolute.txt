@@ -1,0 +1,34 @@
+C:\Users\egork\source\repos\5 prac\bin\Debug\5 prac.exe.config
+C:\Users\egork\source\repos\5 prac\bin\Debug\5 prac.exe
+C:\Users\egork\source\repos\5 prac\bin\Debug\5 prac.pdb
+C:\Users\egork\source\repos\5 prac\bin\Debug\MaterialDesignColors.dll
+C:\Users\egork\source\repos\5 prac\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\egork\source\repos\5 prac\bin\Debug\MaterialDesignColors.pdb
+C:\Users\egork\source\repos\5 prac\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\egork\source\repos\5 prac\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.csproj.AssemblyReference.cache
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.csproj.SuggestedBindingRedirects.cache
+C:\Users\egork\source\repos\5 prac\obj\Debug\MainWindow.g.cs
+C:\Users\egork\source\repos\5 prac\obj\Debug\App.g.cs
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac_MarkupCompile.cache
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac_MarkupCompile.lref
+C:\Users\egork\source\repos\5 prac\obj\Debug\App.baml
+C:\Users\egork\source\repos\5 prac\obj\Debug\MainWindow.baml
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.g.resources
+C:\Users\egork\source\repos\5 prac\obj\Debug\_5_prac.Properties.Resources.resources
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.csproj.GenerateResource.cache
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.csproj.CoreCompileInputs.cache
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.csproj.CopyComplete
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.exe
+C:\Users\egork\source\repos\5 prac\obj\Debug\5 prac.pdb
+C:\Users\egork\source\repos\5 prac\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\egork\source\repos\5 prac\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\egork\source\repos\5 prac\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\egork\source\repos\5 prac\obj\Debug\admin_window.g.cs
+C:\Users\egork\source\repos\5 prac\obj\Debug\cashier_window.g.cs
+C:\Users\egork\source\repos\5 prac\obj\Debug\admin_window.baml
+C:\Users\egork\source\repos\5 prac\obj\Debug\cashier_window.baml
+C:\Users\egork\source\repos\5 prac\obj\Debug\depo_window.g.cs
+C:\Users\egork\source\repos\5 prac\obj\Debug\depo_window.baml
+C:\Users\egork\source\repos\5 prac\obj\Debug\role.g.cs
+C:\Users\egork\source\repos\5 prac\obj\Debug\role.baml
