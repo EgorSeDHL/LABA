@@ -1,0 +1,87 @@
+﻿<Window x:Class="_5_prac.depo_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5_prac"
+        mc:Ignorable="d"
+        Title="depo_window" Height="450" Width="800">
+    <Grid>
+        <TabControl Grid.ColumnSpan="3">
+            <TabItem x:Name="change_time" VerticalAlignment="Stretch" Header="Изменить время">
+                <Grid Background="#FFE5E5E5" Height="386" VerticalAlignment="Bottom">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="depo_grid"  SelectionMode="Extended" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="depo_grid_SelectionChanged" Grid.ColumnSpan="2" Margin="0,0,0,13" Grid.RowSpan="3" />
+                    <TextBox x:Name="train_number_box" Grid.Column="2" Margin="10,30,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" TextChanged="train_number_box_TextChanged" />
+                    <Button x:Name="change_button" Content="Изменить" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center" Click="change_button_Click" />
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="0,4,0,0" TextWrapping="Wrap" Text="Номер поезда" VerticalAlignment="Top"/>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1"><Run Text="Номер"/><Run Language="ru-ru" Text=" маршрута"/></TextBlock>
+                    <Frame x:Name="frame1" Margin="0,0,1,0"/>
+                    <Button x:Name="create_button" Grid.Column="1" Content="Создать" HorizontalAlignment="Stretch" Margin="10" Grid.Row="3" VerticalAlignment="Center" Click="create_button_Click"/>
+                    <ComboBox x:Name="route_id" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10" Grid.Row="1" VerticalAlignment="Bottom"/>
+                    <Button x:Name="delete_button" Grid.Column="2" Content="Удалить"  Margin="10" Grid.Row="3" VerticalAlignment="Center" Click="delete_button_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="change_route" Header="Изменить маршрут" >
+                <Grid x:Name="route_window" Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32*"/>
+                        <RowDefinition Height="32*"/>
+                        <RowDefinition Height="96*"/>
+                        <RowDefinition Height="33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid  x:Name="route_grid" SelectionMode="Extended" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,3,0" Grid.RowSpan="4" Grid.ColumnSpan="2" SelectionChanged="route_grid_SelectionChanged"/>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Начальная станция" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="start_statinon" Grid.Column="2" VerticalAlignment="Top" Margin="10,26,10,0" />
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" Margin="0,10,0,0" TextWrapping="Wrap" Text="Конечная станция" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="end_station" Grid.Column="2" Margin="10,30,10,0" VerticalAlignment="Top" Grid.Row="1"/>
+                    <Button x:Name="update_button2" Content="Изменить" HorizontalAlignment="Stretch" Grid.Row="3" Margin="10" VerticalAlignment="Center" Click="update_button2_Click"/>
+                    <Button x:Name="create_button2" Content="Создать" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" Margin="10" VerticalAlignment="Center" Click="create_button2_Click"/>
+                    <Button x:Name="delete_button2" Content="Удалить" HorizontalAlignment="Stretch" Grid.Row="3" Grid.Column="2" Margin="10" VerticalAlignment="Center" Click="delete_button2_Click"/>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="change_station"  Header="Изменить станцию"   >
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="52*"/>
+                        <RowDefinition Height="66*"/>
+                        <RowDefinition Height="191*"/>
+                        <RowDefinition Height="77*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="station_grid" SelectionMode="Extended" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.RowSpan="3" SelectionChanged="station_grid_SelectionChanged" Grid.ColumnSpan="2"/>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Название станции" FontSize="20" VerticalAlignment="Top"/>
+                    <TextBox x:Name="station_box" Grid.Column="2" Margin="10,27,10,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+                    <TextBox x:Name="city_box" Grid.Column="2" Margin="10,41,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Grid.Row="1"/>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Город" FontSize="20" VerticalAlignment="Top"/>
+                    <Button x:Name="change3_button" Content="Изменить" HorizontalAlignment="Stretch" Margin="10" Grid.Row="3" VerticalAlignment="Center" Click="change3_button_Click"/>
+                    <Button x:Name="create_button3" Grid.Column="1" Content="Создать" HorizontalAlignment="Stretch" Margin="10" Grid.Row="3" VerticalAlignment="Center" Click="create_button3_Click"/>
+                    <Button x:Name="delete_button3" Grid.Column="2" Content="Удалить" HorizontalAlignment="Stretch" Margin="10" Grid.Row="3" VerticalAlignment="Center" Click="delete_button3_Click"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>
